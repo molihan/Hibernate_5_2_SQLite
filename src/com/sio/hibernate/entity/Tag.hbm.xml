@@ -1,0 +1,13 @@
+<hibernate-mapping package="com.sio.hibernate.entity">  
+   
+   <class name="Tag"  table="tag">  
+      <id name="id"column="id" length="32"access="field">  
+         <generator class="uuid" />  
+      </id>  
+      <!-- 设置主键不能重复和不能为空的属性. -->  
+      <property name=mac length="30"unique="true" not-null="true"/>  
+      <property name="status"/>  
+      <property name="dbm"/>  
+      <property name="ip"/>  
+   </class>  
+</hibernate-mapping>  
